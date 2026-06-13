@@ -8,13 +8,12 @@ body {
 
 nav {
     background: #0d3b66;
-    padding: 16px 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 14px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
 }
-
 nav a {
     color: white;
     text-decoration: none;
@@ -136,7 +135,11 @@ footer {
     color: #d9e2ec;
 }
 .nav-logo {
-    height: 40px;
+    height: 42px;
+    width: auto;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 6px;
     vertical-align: middle;
-    margin-right: 30px;
+    margin-right: 40px;
 }
