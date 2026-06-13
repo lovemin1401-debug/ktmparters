@@ -1,1 +1,1 @@
-# ktmparters
+# ktmpartners
