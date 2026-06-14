@@ -8,15 +8,15 @@ body {
 
 nav {
     background: #0d3b66;
-    padding: 14px 40px;
+    padding: 14px 30px;
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 18px;
 }
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 18px;
+    margin: 0 10px;
     font-weight: 600;
     font-size: 15px;
 }
