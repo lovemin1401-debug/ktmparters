@@ -205,8 +205,8 @@ section {
     flex: 1;
 }
 .nav-logo {
-    width: 160px;
-    height: auto;
+    height: 50px;
+    width: auto;
     display: block;
 }
 
