@@ -207,3 +207,12 @@ body {
 section {
     flex: 1;
 }
+.nav-logo {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.logo-link {
+    margin-right: auto;
+}
