@@ -223,3 +223,17 @@ section {
     display: block;
     margin: 30px auto;
 }
+.product-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 30px auto;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 12px;
+}
