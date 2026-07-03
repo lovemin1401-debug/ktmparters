@@ -1,120 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <url>
-        <loc>https://ktmpartners.co.kr/</loc>
-        <lastmod>2026-07-03</lastmod>
-        <priority>1.0</priority>
-    </url>
+<url>
+<loc>https://ktmpartners.co.kr/</loc>
+<priority>1.0</priority>
+</url>
 
-    <url>
-        <loc>https://ktmpartners.co.kr/greeting.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
+<url><loc>https://ktmpartners.co.kr/about.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/greeting.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/location.html</loc></url>
 
-    <url>
-        <loc>https://ktmpartners.co.kr/about.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
+<url><loc>https://ktmpartners.co.kr/focus-laser-scanner.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/scene.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/as-built.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/cam2.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/buildit-construction.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/buildit-metrology.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/buildit-projector.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/polyworks.html</loc></url>
 
-    <url>
-        <loc>https://ktmpartners.co.kr/location.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
+<url><loc>https://ktmpartners.co.kr/quantum-x.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/gage-max.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/trackarm.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/vantage.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/creaform.html</loc></url>
 
-    <url>
-        <loc>https://ktmpartners.co.kr/focus-laser-scanner.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
+<url><loc>https://ktmpartners.co.kr/cases.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/construction-solutions.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/manufacturing-solutions.html</loc></url>
+<url><loc>https://ktmpartners.co.kr/reverse-engineering-solutions.html</loc></url>
 
-    <url>
-        <loc>https://ktmpartners.co.kr/scene.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
+<url><loc>https://ktmpartners.co.kr/library.html</loc></url>
 
-    <url>
-        <loc>https://ktmpartners.co.kr/as-built.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/cam2.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/buildit-construction.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/buildit-metrology.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/buildit-projector.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/polyworks.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/quantum-x.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/gage-max.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/trackarm.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/vantage.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/creaform.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/cases.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/construction-solutions.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/manufacturing-solutions.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/reverse-engineering-solutions.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/library.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://ktmpartners.co.kr/contact.html</loc>
-        <lastmod>2026-07-03</lastmod>
-    </url>
+<url><loc>https://ktmpartners.co.kr/contact.html</loc></url>
 
 </urlset>
