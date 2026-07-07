@@ -24,3 +24,21 @@ fetch("footer.html")
     .then(data => {
         document.getElementById("footer").innerHTML = data;
     });
+window.addEventListener("scroll", function () {
+    const topBtn = document.getElementById("topBtn");
+
+    if (!topBtn) return;
+
+    if (window.scrollY > 400) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
