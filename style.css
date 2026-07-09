@@ -1317,3 +1317,48 @@ padding:30px;
 }
 
 }
+/* ==========================================
+   STEP 4: Applications
+========================================== */
+
+.application-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.application-card {
+  border-top: 3px solid #0d3b66;
+  background: #ffffff;
+  padding: 30px;
+  min-height: 180px;
+  box-shadow: 0 8px 24px rgba(16, 42, 67, 0.06);
+}
+
+.application-card h3 {
+  font-size: 20px;
+  color: #102a43;
+  margin-bottom: 14px;
+}
+
+.application-card p {
+  line-height: 1.75;
+  color: #555;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .application-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .application-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .application-card {
+    min-height: auto;
+  }
+}
