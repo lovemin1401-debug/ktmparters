@@ -1362,3 +1362,51 @@ padding:30px;
     min-height: auto;
   }
 }
+/* ==========================================
+   STEP 5: Technical Specifications
+========================================== */
+
+.spec-table-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  border-top: 2px solid #0d3b66;
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.spec-table th,
+.spec-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #dde5ec;
+  text-align: left;
+  vertical-align: top;
+}
+
+.spec-table th {
+  width: 32%;
+  color: #102a43;
+  font-weight: 700;
+  background: #f7f9fc;
+}
+
+.spec-table td {
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .spec-table th,
+  .spec-table td {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+  }
+
+  .spec-table th {
+    border-bottom: none;
+  }
+}
