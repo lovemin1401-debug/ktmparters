@@ -1815,3 +1815,47 @@ font-size:13px;
 color:#52606d;
 
 }
+/* =====================================================
+   STEP 11 : Software Product Cards
+===================================================== */
+
+.catalog-card-v2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+}
+
+.catalog-card-v2 h3 {
+  font-size: 22px;
+  margin: 4px 0 16px;
+}
+
+.product-role {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #dde5ec;
+  color: #102a43;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.catalog-card-v2 .product-summary {
+  margin: 0 0 18px;
+  font-size: 15px;
+}
+
+.catalog-card-v2 .product-tags {
+  margin-top: auto;
+  margin-bottom: 18px;
+}
+
+.catalog-card-v2 .catalog-button {
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .catalog-card-v2 {
+    min-height: auto;
+  }
+}
