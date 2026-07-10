@@ -1861,128 +1861,83 @@ color:#52606d;
 }
 
 /* =====================================================
-   STEP 12  : Workflow
+   STEP 12 : Digital Reality Workflow
 ===================================================== */
 
-.workflow-list{
-
-display:flex;
-
-flex-direction:column;
-
-gap:20px;
-
-max-width:900px;
-
-margin:auto;
-
+.hub-workflow {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.workflow-item{
-
-display:flex;
-
-align-items:center;
-
-gap:25px;
-
-padding:30px;
-
-background:white;
-
-border:1px solid #dce5ef;
-
-border-top:3px solid #0d3b66;
-border-left:1px solid #dde5ec;
-
-transition:.25s;
-
+.hub-workflow-step {
+  display: block;
+  padding: 34px 38px;
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-left: 5px solid #0d3b66;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s;
 }
 
-.workflow-item:hover{
-
-box-shadow:0 8px 24px rgba(0,0,0,.08);
-
-transform:translateY(-2px);
-
+.hub-workflow-step:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(16, 42, 67, 0.08);
 }
 
-.workflow-index{
-
-width:70px;
-
-height:70px;
-
-flex-shrink:0;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-background:none;
-
-color:#9fb0bf;
-    
-font-size:13px;
-
-    letter-spacing:2px;
-
-font-weight:700;
-
-    margin-bottom:12px;
-
+.hub-workflow-current {
+  background: #f3f7fb;
+  cursor: default;
 }
 
-.workflow-content h3{
-
-margin:0;
-
-font-size:24px;
-
-color:#102a43;
-
+.hub-workflow-current:hover {
+  transform: none;
+  box-shadow: none;
 }
 
-.workflow-content strong{
-
-display:block;
-
-margin:8px 0 12px;
-
-color:#0d3b66;
-
+.hub-workflow-step span {
+  display: block;
+  margin-bottom: 24px;
+  color: #6b7b8d;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-.workflow-content p{
-
-margin:0;
-
-color:#52606d;
-
-line-height:1.8;
-
+.hub-workflow-step h3 {
+  margin: 0 0 14px;
+  color: #102a43;
+  font-size: 24px;
 }
 
-@media(max-width:768px){
-
-.workflow-item{
-
-flex-direction:column;
-
-align-items:flex-start;
-
+.hub-workflow-step p {
+  margin: 0;
+  color: #52606d;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-.workflow-index{
-
-width:55px;
-
-height:55px;
-
-font-size:18px;
-
+.hub-workflow-arrow {
+  padding: 16px 0;
+  color: #0d3b66;
+  font-size: 24px;
+  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .hub-workflow-step {
+    padding: 26px 24px;
+  }
+
+  .hub-workflow-step h3 {
+    font-size: 21px;
+  }
+
+  .hub-workflow-step p {
+    font-size: 15px;
+  }
+
+  .hub-workflow-arrow {
+    padding: 12px 0;
+  }
 }
