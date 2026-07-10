@@ -1861,7 +1861,7 @@ color:#52606d;
 }
 
 /* =====================================================
-   STEP 12 V2 : Workflow
+   STEP 12  : Workflow
 ===================================================== */
 
 .workflow-list{
@@ -1892,7 +1892,8 @@ background:white;
 
 border:1px solid #dce5ef;
 
-border-left:5px solid #0d3b66;
+border-top:3px solid #0d3b66;
+border-left:1px solid #dde5ec;
 
 transition:.25s;
 
@@ -1920,13 +1921,17 @@ justify-content:center;
 
 align-items:center;
 
-background:#0d3b66;
+background:none;
 
-color:white;
+color:#9fb0bf;
+    
+font-size:13px;
 
-font-size:22px;
+    letter-spacing:2px;
 
 font-weight:700;
+
+    margin-bottom:12px;
 
 }
 
