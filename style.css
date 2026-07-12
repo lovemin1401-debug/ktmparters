@@ -343,7 +343,7 @@ section {
     border-color:#0F3D61;
 }
 
-.sub-nav a.active{
+a.active{
     background:#0F3D61;
     color:#fff;
     border-color:#0F3D61;
@@ -798,6 +798,8 @@ border:1px solid #e5e5e5;
         overflow-x: auto;
         gap: 8px;
         padding-bottom: 8px;
+        margin-top: 32px;
+    margin-bottom: 18px;
     }
 
     .sub-nav a {
