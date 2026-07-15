@@ -1949,3 +1949,132 @@ color:#52606d;
     padding-top: 48px;
   }
 }
+/* =====================================================
+   Focus Field Gallery
+===================================================== */
+
+.focus-gallery {
+  position: relative;
+  max-width: 1100px;
+  margin: 42px auto 0;
+}
+
+.gallery-viewport {
+  overflow: hidden;
+  border-radius: 18px;
+  background: #eef3f8;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.gallery-slide {
+  flex: 0 0 100%;
+  margin: 0;
+}
+
+.gallery-slide img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+}
+
+.gallery-slide figcaption {
+  padding: 18px 22px;
+  color: #42566a;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+
+  width: 48px;
+  height: 48px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: rgba(12, 61, 96, 0.88);
+  color: #fff;
+
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+
+  transform: translateY(-50%);
+}
+
+.gallery-prev {
+  left: 18px;
+}
+
+.gallery-next {
+  right: 18px;
+}
+
+.gallery-arrow:hover {
+  background: #0f3d61;
+}
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.gallery-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #c4cfda;
+  cursor: pointer;
+}
+
+.gallery-dot.active {
+  width: 28px;
+  border-radius: 999px;
+  background: #0f3d61;
+}
+
+@media (max-width: 768px) {
+
+  .focus-gallery {
+    margin-top: 30px;
+  }
+
+  .gallery-slide img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .gallery-slide figcaption {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .gallery-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+  }
+
+  .gallery-prev {
+    left: 10px;
+  }
+
+  .gallery-next {
+    right: 10px;
+  }
+}
