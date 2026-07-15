@@ -42,3 +42,65 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
+/* =====================================================
+   Focus Field Gallery
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const gallery = document.querySelector(".focus-gallery");
+
+  if (!gallery) {
+    return;
+  }
+
+  const track = gallery.querySelector(".gallery-track");
+  const slides = gallery.querySelectorAll(".gallery-slide");
+  const prevButton = gallery.querySelector(".gallery-prev");
+  const nextButton = gallery.querySelector(".gallery-next");
+  const dots = document.querySelectorAll(".gallery-dot");
+
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    if (index < 0) {
+      currentIndex = slides.length - 1;
+    } else if (index >= slides.length) {
+      currentIndex = 0;
+    } else {
+      currentIndex = index;
+    }
+
+    track.style.transform =
+      `translateX(-${currentIndex * 100}%)`;
+
+    slides.forEach(function (slide, slideIndex) {
+      slide.classList.toggle(
+        "active",
+        slideIndex === currentIndex
+      );
+    });
+
+    dots.forEach(function (dot, dotIndex) {
+      dot.classList.toggle(
+        "active",
+        dotIndex === currentIndex
+      );
+    });
+  }
+
+  prevButton.addEventListener("click", function () {
+    showSlide(currentIndex - 1);
+  });
+
+  nextButton.addEventListener("click", function () {
+    showSlide(currentIndex + 1);
+  });
+
+  dots.forEach(function (dot, dotIndex) {
+    dot.addEventListener("click", function () {
+      showSlide(dotIndex);
+    });
+  });
+
+  showSlide(0);
+});
