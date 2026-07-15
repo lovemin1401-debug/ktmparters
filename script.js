@@ -104,3 +104,58 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showSlide(0);
 });
+/* =====================================================
+   Product Image Mini Gallery
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const gallery = document.querySelector(".product-image-gallery");
+
+  if (!gallery) {
+    return;
+  }
+
+  const track = gallery.querySelector(".product-gallery-track");
+  const slides = gallery.querySelectorAll(".product-gallery-slide");
+  const prevButton = gallery.querySelector(".product-gallery-prev");
+  const nextButton = gallery.querySelector(".product-gallery-next");
+  const dots = gallery.querySelectorAll(".product-gallery-dot");
+
+  let currentIndex = 0;
+
+  function showProductSlide(index) {
+    if (index < 0) {
+      currentIndex = slides.length - 1;
+    } else if (index >= slides.length) {
+      currentIndex = 0;
+    } else {
+      currentIndex = index;
+    }
+
+    track.style.transform =
+      `translateX(-${currentIndex * 100}%)`;
+
+    dots.forEach(function (dot, dotIndex) {
+      dot.classList.toggle(
+        "active",
+        dotIndex === currentIndex
+      );
+    });
+  }
+
+  prevButton.addEventListener("click", function () {
+    showProductSlide(currentIndex - 1);
+  });
+
+  nextButton.addEventListener("click", function () {
+    showProductSlide(currentIndex + 1);
+  });
+
+  dots.forEach(function (dot, dotIndex) {
+    dot.addEventListener("click", function () {
+      showProductSlide(dotIndex);
+    });
+  });
+
+  showProductSlide(0);
+});
