@@ -1943,3 +1943,9 @@ color:#52606d;
     padding: 12px 0;
   }
 }
+@media (min-width: 769px) {
+  .product-hero + .sub-nav {
+    margin-top: 0 !important;
+    padding-top: 48px;
+  }
+}
