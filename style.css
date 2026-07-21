@@ -2200,3 +2200,22 @@ color:#52606d;
 .catalog-card-v2 .product-tags {
     margin-top: auto;
 }
+/* 제품 카드 안 product-summary 클래스 충돌 보정 */
+.catalog-card .product-summary,
+.catalog-card-v2 .product-summary {
+    display: block;
+    grid-template-columns: none;
+    gap: 0;
+    align-items: initial;
+
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+
+    margin: 0 0 18px;
+    font-size: 15px;
+    line-height: 1.8;
+
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
