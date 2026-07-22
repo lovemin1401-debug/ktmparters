@@ -9,12 +9,46 @@ fetch("header.html")
             document.getElementById("navMenu").classList.toggle("active");
         };
 
-        // 드롭다운 메뉴
-        document.querySelectorAll(".dropdown-btn").forEach(function(button) {
-            button.addEventListener("click", function() {
-                this.parentElement.classList.toggle("open");
-            });
+        // 상위 드롭다운 메뉴
+document.querySelectorAll(".dropdown-btn").forEach(function (button) {
+    button.setAttribute("aria-expanded", "false");
+
+    button.addEventListener("click", function () {
+        const dropdown = this.parentElement;
+        const isOpen = dropdown.classList.toggle("open");
+
+        this.setAttribute("aria-expanded", String(isOpen));
+    });
+});
+
+// 솔루션 하위메뉴
+document.querySelectorAll(".solution-group-btn").forEach(function (button) {
+    button.setAttribute("aria-expanded", "false");
+
+    button.addEventListener("click", function () {
+        const currentGroup = this.closest(".solution-group");
+        const groupContainer = currentGroup.parentElement;
+        const willOpen = !currentGroup.classList.contains("open");
+
+        // 다른 제품군 메뉴 닫기
+        Array.from(groupContainer.children).forEach(function (group) {
+            if (!group.classList.contains("solution-group")) return;
+
+            group.classList.remove("open");
+
+            const groupButton = group.querySelector(".solution-group-btn");
+            if (groupButton) {
+                groupButton.setAttribute("aria-expanded", "false");
+            }
         });
+
+        // 선택한 제품군 메뉴 열기
+        if (willOpen) {
+            currentGroup.classList.add("open");
+            this.setAttribute("aria-expanded", "true");
+        }
+    });
+});
 
     });
 
