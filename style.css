@@ -193,8 +193,12 @@ footer .copyright{
     background: #f5f7fa;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+/* PC에서 상위 드롭다운 열기 */
+@media (min-width: 769px) {
+    .dropdown:hover > .dropdown-content,
+    .dropdown.open > .dropdown-content {
+        display: block;
+    }
 }
 .product-card {
     display: flex;
@@ -2218,4 +2222,106 @@ color:#52606d;
 
     word-break: keep-all;
     overflow-wrap: break-word;
+}
+/* =====================================================
+   Solution Nested Menu
+===================================================== */
+
+.solution-menu {
+    min-width: 280px;
+}
+
+.solution-group + .solution-group {
+    border-top: 1px solid #e1e7ef;
+}
+
+.solution-group-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    background: #ffffff;
+    color: #0d3b66;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+}
+
+.solution-group-btn:hover {
+    background: #f5f7fa;
+}
+
+.solution-arrow {
+    font-size: 18px;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.solution-group.open .solution-arrow {
+    transform: rotate(180deg);
+}
+
+.solution-submenu {
+    display: none;
+    background: #f7f9fb;
+    border-top: 1px solid #edf1f5;
+}
+
+.solution-group.open .solution-submenu {
+    display: block;
+}
+
+.solution-submenu a {
+    padding: 11px 16px 11px 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.solution-submenu .overview-link {
+    color: #145ea8;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .solution-menu {
+        min-width: 0;
+    }
+
+    .solution-group {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .solution-group-btn {
+        padding: 14px 42px;
+        background: rgba(255, 255, 255, 0.04);
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .solution-group-btn:hover {
+        background: rgba(255, 255, 255, 0.08);
+        color: #a8d5ff;
+    }
+
+    .solution-submenu {
+        background: rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .solution-submenu a,
+    .solution-submenu .overview-link {
+        padding-left: 60px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .solution-submenu .overview-link {
+        color: #a8d5ff;
+        font-weight: 700;
+    }
 }
