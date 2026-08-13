@@ -2879,3 +2879,19 @@ color:#52606d;
     font-size: 21px;
   }
 }
+/* Quantum X 갤러리 현장 이미지 안내 */
+.product-gallery-note {
+  margin: 12px 12px 0;
+  color: #6b7b8d;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  word-break: keep-all;
+}
+
+@media (max-width: 768px) {
+  .product-gallery-note {
+    margin: 10px 8px 0;
+    font-size: 11px;
+  }
+}
