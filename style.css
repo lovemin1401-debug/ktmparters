@@ -2974,3 +2974,78 @@ color:#52606d;
     aspect-ratio: 5 / 3;
   }
 }
+/* ==========================================
+   Quantum X 제품 활용사례
+========================================== */
+
+.quantum-usecases {
+  margin-top: 90px;
+  padding: 80px 20px;
+  background: #f7f9fc;
+}
+
+.case-grid--quantum {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1100px;
+}
+
+.quantum-usecase-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.quantum-usecase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(15, 52, 77, 0.14);
+}
+
+.quantum-usecase-card .case-image {
+  aspect-ratio: 16 / 9;
+}
+
+.quantum-usecase-card .case-image img {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s ease;
+}
+
+.quantum-usecase-card:hover .case-image img {
+  transform: scale(1.035);
+}
+
+.quantum-case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.quantum-case-tags span {
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #edf4f8;
+  color: #35657f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .quantum-usecases {
+    margin-top: 65px;
+    padding: 60px 20px;
+  }
+
+  .case-grid--quantum {
+    grid-template-columns: 1fr;
+  }
+
+  .quantum-usecase-card .case-image {
+    aspect-ratio: 4 / 3;
+  }
+
+  .quantum-usecase-card .case-card-body {
+    padding: 24px 22px 26px;
+  }
+}
