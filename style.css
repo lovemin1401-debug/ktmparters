@@ -3076,3 +3076,18 @@ color:#52606d;
     background: #eef3f7;
   }
 }
+/* Product Video */
+.product-video {
+    width: 100%;
+    max-width: 1000px;
+    margin: 35px auto 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+}
+
+.product-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
